@@ -1,45 +1,55 @@
-<html>
-    <head>
-        <title> apllication</title>
-        <h1><center> APPLICATION FORM</center></h1>
-    </head>
-    <form>
-        <body>
-        <!--<fieldset>-->
-           <!-- <legend>PERSONAL DETAILS</legend>-->
-        FIRST NAME:
-        <input type="text">
-        LAST NAME:
-        <input type="text"><br>
-        <br>
-        DATE OF BIRTH:
-        <input type="date">
-        AGE:
-        <input type="number"><br>
-        <br>
-        GENDER:
-        <select>
-            <option>Male</option>
-            <option>Female</option>
-        </select>
-         EMAIL ADDRESS:
-         <input type="email" placeholder="Enter email address"><br>
-         <br>
-        POSITIONS AVAILABLE:
-        <input type="radio" name="positions available">Junior developer
-        <input type="radio" name="positions available">Mid-level developer
-        <input type="radio" name="positions available">Senior developer<br><br>
-        PROGRAMMING LANGUAGES:
-        <input type="checkbox" name="programming languages">Java
-        <input type="checkbox" name="programming languages">JavaScript
-        <input type="checkbox" name="programming languages">Python<br><br>
-        PASSWORD:
-        <input type="password">
-        CONFIRM PASSWORD:
-        <input type="password"><br><br>
-        <input type="submit">
-        <input type="reset">
-     <!--</fieldset>-->
-    </body>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="appl.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Application Form</h1>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address"><br>
+
+            <label>Positions Available:</label>
+            <input type="radio" name="position" value="junior">Junior Developer
+            <input type="radio" name="position" value="mid">Mid-level Developer
+            <input type="radio" name="position" value="senior">Senior Developer<br><br>
+
+            <label>Programming Languages:</label>
+            <input type="checkbox" name="language" value="java">Java
+            <input type="checkbox" name="language" value="javascript">JavaScript
+            <input type="checkbox" name="language" value="python">Python<br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
 </html>
